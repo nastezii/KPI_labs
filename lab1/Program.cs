@@ -3,14 +3,14 @@ int Inc1(int a)
 {
     return a++;
 }
-void Ex1()
+void Ex1_1()
 {
     int a = 10;
     int b = Inc1(a);
     Console.WriteLine($"a={a}, b={b}");
 }
 
-void Ex2()
+void Ex1_2()
 {
     int n = 5;
     Inc2(ref n);
@@ -23,7 +23,7 @@ void Inc2(ref int n)
 }
 
 //statically set keys
-void Ex3()
+void Ex2_1()
 {
     object[] myArray = { true, "cat", 5, 11, -21, false, 345, true, "windows", 14.23, 's', 'a', null, null, true, 42 };
     Dictionary<string, int> typeCounts = new Dictionary<string, int>
@@ -53,7 +53,7 @@ void Ex3()
 }
 
 //dynamically adding keys
-void Ex4()
+void Ex2_2()
 {
     object[] myArray = { true, "cat", 5, 11, -21, false, 345, true, "windows", 14.23, 's', 'a', null, null, true, 42 };
     Dictionary<string, int> typeCounts = new Dictionary<string, int>();
