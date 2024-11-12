@@ -1,4 +1,4 @@
-﻿//Ex1_1: identifiers
+﻿// Ex1_1: Identifiers
 void Ex1_1()
 {
     string name = "Anastasia";
@@ -10,7 +10,7 @@ void Ex1_1()
     PrintGreeting(name);
 }
 
-//Ex2_1: a function that returns an array of numbers from a range, including extreme numbers
+// Ex2_1: A function that returns an array of numbers from a range, including extreme numbers
 int[] Range(int firstNum, int secondNum)
 {
     int size = secondNum - firstNum + 1;
@@ -22,7 +22,7 @@ int[] Range(int firstNum, int secondNum)
     return array;
 }
 
-//Ex2_2: a function that returns an array of odd numbers from the range , including extreme numbers
+// Ex2_2: A function that returns an array of odd numbers from the range, including extreme numbers
 int[] RangeOdd(int firstNum, int secondNum)
 {
     int size = 0;
@@ -46,25 +46,25 @@ int[] RangeOdd(int firstNum, int secondNum)
     return array;
 }
 
-//Ex3_1: average
+// Ex3_1: A function that calculates the average of two numbers
 double Average(int firstNum, int secondNum)
 {
-    return (firstNum + secondNum) / 2;
+    return (firstNum + secondNum) / 2.0;
 }
 
-//Ex3_2: square
+// Ex3_2: A function that returns the square of a number
 int Square(int number)
 {
     return (int)Math.Pow(number, 2);
 }
 
-//Ex3_3: cube
+// Ex3_3: A function that returns the cube of a number
 int Cube(int number)
 {
     return (int)Math.Pow(number, 3);
 }
 
-//Ex3_4: calculate
+// Ex3_4: A function that calculates the average of the square and cube of numbers from 0 to 9
 double[] Calculate()
 {
     double[] array = new double[10];
@@ -75,13 +75,13 @@ double[] Calculate()
     return array;
 }
 
-//Ex4_1: function that create a user object
+// Ex4_1: A function that creates a user object
 object CreateUser(string name, string city)
 {
     return new { Name = name, City = city };
 }
 
-//Ex5_1: function for searching the phone by name
+// Ex5_1: A function for searching the phone number by name using an array
 void Ex5_1()
 {
     (string Name, string Phone)[] contacts = new (string, string)[]
@@ -107,15 +107,15 @@ void Ex5_1()
     Console.WriteLine($"Телефон для {nameToSearch}: {phone}");
 }
 
-//Ex5_2: function for searching the phone by name
+// Ex5_2: A function for searching the phone number by name using a dictionary
 void Ex5_2()
 {
     Dictionary<string, string> contacts1 = new Dictionary<string, string>
-{
-    { "Sasha", "+380123987789" },
-    { "Nastia", "+380987534321" },
-    { "Vlada", "+380346432343" }
-};
+    {
+        { "Sasha", "+380123987789" },
+        { "Nastia", "+380987534321" },
+        { "Vlada", "+380346432343" }
+    };
 
     string FindPhoneByName2(string name)
     {

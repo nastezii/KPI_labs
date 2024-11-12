@@ -1,4 +1,4 @@
-﻿//first implementation inc
+﻿//First implementation of increment function 
 int Inc1(int a)
 {
     return a++;
@@ -16,13 +16,13 @@ void Ex1_2()
     Inc2(ref n);
     Console.WriteLine($"n = {n}");
 }
-//second implementation inc
+//Second implementation of increment function (using 'ref' for pass-by-reference)
 void Inc2(ref int n)
 {
     n++;
 }
 
-//statically set keys
+//Count occurrences of different types in a statically defined array
 void Ex2_1()
 {
     object[] myArray = { true, "cat", 5, 11, -21, false, 345, true, "windows", 14.23, 's', 'a', null, null, true, 42 };
@@ -52,7 +52,7 @@ void Ex2_1()
     }
 }
 
-//dynamically adding keys
+//Count occurrences of different types in a dynamically defined array
 void Ex2_2()
 {
     object[] myArray = { true, "cat", 5, 11, -21, false, 345, true, "windows", 14.23, 's', 'a', null, null, true, 42 };

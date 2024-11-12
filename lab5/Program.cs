@@ -1,4 +1,4 @@
-﻿//A class,that allows executing a sequence of functions, each of which takes and returns an int value
+﻿//A class,that allows executing a sequence of functions, each of which takes and returns an int value.
 // Example:
 Console.WriteLine(new Sequence(x => x + 7, x => x * 2).Execute(5)); //Output: 24
 
