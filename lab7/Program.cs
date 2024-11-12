@@ -17,9 +17,15 @@ void RemoveElements(ref int[] array, params int[] items)
 }
 
 //A function, that returns a unique array.
-int[] UniqueArray(ref int[] array)
+int[] UniqueArray(int[] array)
 {
     int[] arr = array.Distinct().ToArray();
     return arr;
 }
 
+//A function, that returns a new array containing elements from array1 but not containing in array2
+int[] Difference(int[] array1, int[] array2)
+{
+    int[] arr = array1.Except(array2).ToArray();
+    return arr;
+}
