@@ -16,3 +16,10 @@ void RemoveElements(ref int[] array, params int[] items)
     array = arr;
 }
 
+//A function, that returns a unique array.
+int[] UniqueArray(ref int[] array)
+{
+    int[] arr = array.Distinct().ToArray();
+    return arr;
+}
+
