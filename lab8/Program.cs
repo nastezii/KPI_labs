@@ -16,3 +16,17 @@ void Ex1()
         }
     }
 }
+
+
+//A function that stores a value inside the closure of a returning function.
+//After calling the returning function, it will return the value with the closure.
+
+void Ex2()
+{
+    var read = Store(5);
+    Console.WriteLine(read());
+    Func<int> Store(int value)
+    {
+        return () => value;
+    }
+}
